@@ -55,11 +55,19 @@ Mode *Copter::mode_from_mode_num(const Mode::Number mode)
             break;
 #endif
 
+
 #if MODE_CIRCLE_ENABLED == ENABLED
         case Mode::Number::CIRCLE:
             ret = &mode_circle;
             break;
 #endif
+
+#if MODE_SQUARE_ENABLED == ENABLED
+        case Mode::Number::SQUARE:
+            ret = &mode_square;
+            break;
+#endif
+
 
 #if MODE_LOITER_ENABLED == ENABLED
         case Mode::Number::LOITER:

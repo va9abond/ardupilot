@@ -204,7 +204,10 @@ public:
     friend class ModeAutoTune;
     friend class ModeAvoidADSB;
     friend class ModeBrake;
+
     friend class ModeCircle;
+    friend class ModeCross;
+
     friend class ModeDrift;
     friend class ModeFlip;
     friend class ModeFlowHold;
@@ -990,9 +993,17 @@ private:
 #if MODE_BRAKE_ENABLED == ENABLED
     ModeBrake mode_brake;
 #endif
+
+
 #if MODE_CIRCLE_ENABLED == ENABLED
     ModeCircle mode_circle;
 #endif
+
+#if MODE_SQUARE_ENABLED == ENABLED
+    ModeSquare mode_square;
+#endif
+
+
 #if MODE_DRIFT_ENABLED == ENABLED
     ModeDrift mode_drift;
 #endif

@@ -155,6 +155,12 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+// Square - fly vehicle around a central point by square
+#ifndef MODE_SQUARE_ENABLED
+# define MODE_SQUARE_ENABLED ENABLED
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
 // Circle - fly vehicle around a central point
 #ifndef MODE_CIRCLE_ENABLED
 # define MODE_CIRCLE_ENABLED ENABLED
